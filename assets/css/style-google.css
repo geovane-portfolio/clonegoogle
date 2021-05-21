@@ -5,7 +5,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #aaa;
+    background-color: #111;
 }
 header{
     display: flex;
@@ -54,12 +54,6 @@ header{
 section {
     height: auto;
     width: auto;
-    border: solid #fff;
-}
-footer {
-    height: 120px;
-    width: auto;
-    border: solid #fff;
 }
 .image div {
     width: auto;
@@ -83,8 +77,8 @@ img {
     width: auto;
 }
 input {
-    background-color: #3d3d3d;
-    height: 20px;
+    background-color: transparent;
+    height: 30px;
     width: 300px;
     border: transparent;
     justify-content: center;
@@ -95,20 +89,66 @@ input {
     align-items: center;
 }
 .divbusca {
-    background-color:#3d3d3d;
+    background-color: transparent;
+    border: 1px solid #dfe1e5;
     border:solid 1px;
-    border-radius:15px;
-    width: auto;
+    border-radius: 24px;
+    width: 35%;
     height: 30px;
-}
-  
+} 
 .sebusca{
     float:left;
     background-color:transparent;
-    padding-inline-start: 30px;
-    padding-left:20px;
     font-size:14px;
     border:none;
     height:30px;
     width:260px;
+}
+.button {
+    display: flex;
+    padding-top: 18px;
+    justify-content: center;
+}
+button {
+    height: 34px;
+    background-color: #3c4043;
+    padding: 0 16px;
+    border: transparent;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 14px;
+    margin: 11px 4px;
+    align-items: center;
+    cursor:pointer;
+}
+.space {
+    display: flex;
+    width: auto;
+    min-height: 120px;
+    justify-content: space-between;
+    
+}
+footer {
+    background-color: #3c4043;
+}
+.country {
+    padding: 15px 30px;
+    border-bottom:  1px solid #dadce0;
+    font-size: 15px;
+    color: rgb(0,0,0,.54);
+}
+.foot {
+    display: flex;
+}
+.foot1 a, .foot2 a{
+    padding: 15px;
+    font-size: 15px;
+    color: rgb(0,0,0,.54);
+}
+.foot1 a{
+    align-items: flex-start;
+    white-space: nowrap;
+}
+.foot2 a{
+    align-items: flex-end;
 }
