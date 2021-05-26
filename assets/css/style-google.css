@@ -2,21 +2,32 @@
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
 }
-body{
-    margin: 0;
-    padding: 0;
-    background-color: #111;
+body, html{
+    margin: 0px;
+    padding: 0px;
+    background-color: #000;
+    height: auto;
+    width: auto;
+}
+.box {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
 }
 header{
     display: flex;
     align-items: center;
+    flex-direction: row;
     justify-content: flex-end;
     height: 50px;
+    margin-top: 10px;
 }
 .container{
     height: 100%;
     width: 250px;
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -52,34 +63,37 @@ header{
     background-color: rgba(255, 255, 255, 0.7);;
 }
 section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: auto;
     width: auto;
-}
-.image div {
-    width: auto;
-    height: auto;
 }
 .image {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 200px;
+    margin-top: auto;
 }
 img {
     padding: 10px;
+    max-height: 92px;
+    position: relative;
 }
 .img-busca {
-    height: 10px;
+    height: 15px;
     width: auto;
 }
 .img-busca1 {
     float: left;
-    height: 10px;
+    height: 15px;
     width: auto;
 }
 input {
     background-color: transparent;
     height: 30px;
-    width: 300px;
+    width: 100vh;
     border: transparent;
     justify-content: center;
 }
@@ -87,14 +101,22 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    margin: 0px auto;
+    width: auto;
+    max-width: 584px;
 }
 .divbusca {
+    display: flex;
     background-color: transparent;
-    border: 1px solid #dfe1e5;
-    border:solid 1px;
+    border: 1px solid #444;
     border-radius: 24px;
-    width: 35%;
-    height: 30px;
+    width: auto;
+    max-width: 400px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 200px;
 } 
 .sebusca{
     float:left;
@@ -102,7 +124,7 @@ input {
     font-size:14px;
     border:none;
     height:30px;
-    width:260px;
+    justify-content: space-evenly;
 }
 .button {
     display: flex;
@@ -111,7 +133,7 @@ input {
 }
 button {
     height: 34px;
-    background-color: #3c4043;
+    background-color: #111;
     padding: 0 16px;
     border: transparent;
     border-radius: 4px;
@@ -123,32 +145,42 @@ button {
 }
 .space {
     display: flex;
-    width: auto;
-    min-height: 120px;
-    justify-content: space-between;
-    
+    margin: auto;
+    height: 28vh;
 }
 footer {
-    background-color: #3c4043;
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: auto;
+    width: auto;
+    margin-bottom: 0px;
 }
 .country {
     padding: 15px 30px;
-    border-bottom:  1px solid #dadce0;
-    font-size: 15px;
-    color: rgb(0,0,0,.54);
+    border-bottom:  1px solid #444;
+    font-size: 14px;
+    color:#666;
 }
 .foot {
     display: flex;
+    padding: 0px 20px;
 }
 .foot1 a, .foot2 a{
-    padding: 15px;
-    font-size: 15px;
-    color: rgb(0,0,0,.54);
+    padding: 15px 30px;
+    font-size: 14px;
+    color: #666;
+    text-decoration: none;
+    word-wrap: none;
 }
-.foot1 a{
-    align-items: flex-start;
-    white-space: nowrap;
+.foot1 {
+    display: flex;
+    align-items: center;
 }
-.foot2 a{
-    align-items: flex-end;
+.foot2 {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content:flex-end;
 }
