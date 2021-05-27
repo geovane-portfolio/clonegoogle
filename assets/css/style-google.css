@@ -113,6 +113,7 @@ input {
     width: 100%;
     max-width: 600px;
     height: 40px;
+    margin: 8px 20px;
     justify-content: center;
     align-items: center;
 } 
@@ -165,7 +166,6 @@ span {
     font-size: 14px;
     color: #666;
     text-decoration: none;
-    word-wrap: none;
 }
 .foot1 {
     display: flex;
@@ -179,5 +179,12 @@ span {
 }
 
 @media (max-width:600px){
-
-}
+    .foot {
+        flex-direction: column;
+    }
+    .foot1, .foot2 {
+        justify-content: center;
+    }
+    .foot1 a, .foot2 a {
+        padding: 15px 15px;
+    }
