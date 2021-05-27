@@ -1,7 +1,6 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
-    
 }
 body, html{
     margin: 0px;
@@ -60,13 +59,10 @@ header{
     border-radius: 2px;
     background-color: rgba(255, 255, 255, 0.7);;
 }
-
-
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 .content {
     display: flex;
@@ -80,12 +76,13 @@ img {
     max-height: 92px;
     position: relative;
 }
-.img-busca {
+
+.img-busca1 {
+    float: left;
     height: 15px;
     width: auto;
 }
-.img-busca1 {
-    float: left;
+.img-busca2, .img-busca3 {
     height: 15px;
     width: auto;
 }
@@ -141,7 +138,6 @@ button {
     align-items: center;
     cursor:pointer;
 }
-
 footer {
     background-color: #111;
     display: flex;
@@ -187,4 +183,7 @@ span {
     }
     .foot1 a, .foot2 a {
         padding: 15px 15px;
+    }
+    .img-busca2 {
+        display: none;
     }
