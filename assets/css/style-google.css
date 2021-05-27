@@ -1,17 +1,15 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
+    
 }
 body, html{
     margin: 0px;
     padding: 0px;
+    height: 100%;
     background-color: #000;
-    height: auto;
-    width: auto;
 }
-.box {
-    width: auto;
-    height: auto;
+body {
     display: flex;
     flex-direction: column;
 }
@@ -62,19 +60,20 @@ header{
     border-radius: 2px;
     background-color: rgba(255, 255, 255, 0.7);;
 }
-section {
+
+
+main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    height: auto;
-    width: auto;
-}
-.image {
-    display: flex;
     align-items: center;
-    justify-content: center;
-    height: 200px;
-    margin-top: auto;
+    
+}
+.content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 56px 8px 0;
+    margin-top: 40px;
 }
 img {
     padding: 10px;
@@ -93,9 +92,10 @@ img {
 input {
     background-color: transparent;
     height: 30px;
-    width: 100vh;
+    width: 100%;
     border: transparent;
     justify-content: center;
+    box-decoration-break: none;
 }
 .boxbusca {
     display: flex;
@@ -103,23 +103,20 @@ input {
     align-items: center;
     position: relative;
     margin: 0px auto;
-    width: auto;
-    max-width: 584px;
+    width: 100%;
 }
 .divbusca {
     display: flex;
     background-color: transparent;
     border: 1px solid #444;
     border-radius: 24px;
-    width: auto;
-    max-width: 400px;
+    width: 100%;
+    max-width: 600px;
     height: 40px;
     justify-content: center;
     align-items: center;
-    margin: 0px 200px;
 } 
 .sebusca{
-    float:left;
     background-color:transparent;
     font-size:14px;
     border:none;
@@ -137,24 +134,17 @@ button {
     padding: 0 16px;
     border: transparent;
     border-radius: 4px;
-    color: #fff;
+    color: #888;
     font-size: 14px;
     margin: 11px 4px;
     align-items: center;
     cursor:pointer;
 }
-.space {
-    display: flex;
-    margin: auto;
-    height: 28vh;
-}
+
 footer {
     background-color: #111;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    height: auto;
-    width: auto;
     margin-bottom: 0px;
 }
 .country {
@@ -162,6 +152,9 @@ footer {
     border-bottom:  1px solid #444;
     font-size: 14px;
     color:#666;
+}
+span {
+    color: #666;
 }
 .foot {
     display: flex;
@@ -183,4 +176,8 @@ footer {
     flex: 1;
     align-items: center;
     justify-content:flex-end;
+}
+
+@media (max-width:600px){
+
 }
